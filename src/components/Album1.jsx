@@ -55,8 +55,8 @@ function handleChange(){
 }
     return(
       
-      <>
-      <div className="record" onClick={handleChange}>
+      <div id="albumCard">
+      <div id="record" onClick={handleChange}>
       {
     content == true
     ?
@@ -71,7 +71,7 @@ function handleChange(){
         </>
       }
         </div>
-        <div className="buttons">
+        <div id="buttons">
            {
               record.favorite==true
               ?
@@ -88,7 +88,7 @@ function handleChange(){
             }
         </div>
     
-    </>
+    </div>
     )
 }
 

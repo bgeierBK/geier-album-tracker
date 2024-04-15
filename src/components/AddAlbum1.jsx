@@ -1,4 +1,5 @@
 import {useState} from 'react'
+import "../pages/App.css"
 
 function AddAlbum({records, setRecords}){
     const [formData, setFormData] = useState({
@@ -48,48 +49,54 @@ function AddAlbum({records, setRecords}){
     }
 
     return(
-        
-        <form className="add-album" onSubmit={handleSubmit}>
-        
+    <div id="add">
+        <form id="add-album" onSubmit={handleSubmit}>
+            <div id="head">
             <h2>Don't see your favorite emo record? Add it!</h2>
-
-            <label htmlFor="album_cover">Album Cover:</label>
+            </div>
+            <div className="formgroup">
+            <label className="critera" htmlFor="album_cover">Album Cover:</label>
             <input
             name="cover"
             value={formData.cover}
             onChange={handleChange}
             />
-           
-            <label htmlFor="album_title">Title:</label>
+            </div>
+            <div className="formgroup">
+            <label className="critera" htmlFor="album_title">Title:</label>
             <input
             name="title"
             value={formData.title}
             onChange={handleChange}
             />
-
-            <label htmlFor="album_artist">Artist:</label>
+            </div>
+            <div className="formgroup">
+            <label className="critera" htmlFor="album_artist">Artist:</label>
             <input
             name="artist"
             value={formData.artist}
             onChange={handleChange}
             />
-
-            <label htmlFor="album_producer">Producer:</label>
+            </div>
+            <div className="formgroup">
+            <label className="critera" htmlFor="album_producer">Producer:</label>
             <input
             name="producer"
             value={formData.producer}
             onChange={handleChange}
             />
-            
-            <label htmlFor="album_year">Year:</label>
+            </div>
+            <div className="formgroup">
+            <label className="critera" htmlFor="album_year">Year:</label>
             <input
             name="year"
             type="number"
             value={formData.year}
             onChange={handleChange}
             />
-
-            <label htmlFor="album_decade">Decade:</label>
+            </div>
+            <div className="formgroup">
+            <label className="critera" htmlFor="album_decade">Decade:</label>
             <select name="decade"
             onChange={handleChange}>
                 <option value="80s">80s</option>
@@ -97,22 +104,28 @@ function AddAlbum({records, setRecords}){
                 <option value="00s">00s</option>
                 <option value="10s">10s</option>
                 <option value="20s">20s</option>
+                
             </select>
-            
+            </div>
+            <div className="formgroup">
             <label htmlFor="album_label">Label:</label>
             <input
             name="label"
             value={formData.label}
             onChange={handleChange}
+            className="critera"
             />
-
+            </div>
+            <div>
             <input
             type="submit"
             value="Add Your Record"
             />
+            </div>
 
           
         </form>
+    </div>
     )
 }
 

@@ -15,10 +15,13 @@ function AlbumContainer({records, setRecords}){
     return <Album key={record.id} record={record} records={records} setRecords={setRecords} />
 })
 
+
+
 return (
-       <ul className="cards">
+       <div id="records">
         {mappedRecords}
-       </ul>
+        </div>
+      
 )
     
 }

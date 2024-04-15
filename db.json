@@ -8,21 +8,9 @@
       "year": 2006,
       "label": "Reprise Records",
       "cover": "https://upload.wikimedia.org/wikipedia/en/e/ea/Blackparadecover.jpg",
-      "favorite": false,
-      "toListen": false,
+      "favorite": true,
+      "toListen": true,
       "decade": "00s"
-    },
-    {
-      "id": 2,
-      "title": "American Football",
-      "artist": "American Football",
-      "producer": "Steve Lamos",
-      "year": 1999,
-      "label": "Polyvinyl Record Co.",
-      "cover": "https://upload.wikimedia.org/wikipedia/en/e/e6/American_football_band_lp_cover.png",
-      "favorite": false,
-      "toListen": false,
-      "decade": "90s"
     },
     {
       "id": 3,
@@ -32,7 +20,7 @@
       "year": 2003,
       "label": "Triple Crown Records",
       "cover": "https://upload.wikimedia.org/wikipedia/en/7/7b/Brand_New_Deja_Entendu.jpg",
-      "favorite": false,
+      "favorite": true,
       "toListen": false,
       "decade": "00s"
     },
@@ -56,8 +44,8 @@
       "year": 2004,
       "label": "Reprise Records",
       "cover": "https://upload.wikimedia.org/wikipedia/en/1/14/Three_cheers_clean.jpg",
-      "favorite": false,
-      "toListen": false,
+      "favorite": true,
+      "toListen": true,
       "decade": "00s"
     },
     {
@@ -68,7 +56,7 @@
       "year": 2001,
       "label": "DreamWorks Records",
       "cover": "https://upload.wikimedia.org/wikipedia/en/3/37/Bleedamerican.jpg",
-      "favorite": false,
+      "favorite": true,
       "toListen": false,
       "decade": "00s"
     },
@@ -80,7 +68,7 @@
       "year": 2006,
       "label": "Interscope Records",
       "cover": "https://upload.wikimedia.org/wikipedia/en/6/6e/Thedevilandgodareraginginsideme.jpg",
-      "favorite": false,
+      "favorite": true,
       "toListen": false,
       "decade": "00s"
     },
@@ -93,7 +81,7 @@
       "label": "Victory Records",
       "cover": "https://upload.wikimedia.org/wikipedia/en/e/ef/Tellallyourfriends.jpg",
       "favorite": false,
-      "toListen": false,
+      "toListen": true,
       "decade": "00s"
     },
     {
@@ -104,8 +92,8 @@
       "year": 2001,
       "label": "Vagrant Records",
       "cover": "https://upload.wikimedia.org/wikipedia/en/5/56/Saves_the_Day_-_Stay_What_You_Are_cover.jpg",
-      "favorite": false,
-      "toListen": false,
+      "favorite": true,
+      "toListen": true,
       "decade": "00s"
     },
     {
@@ -116,8 +104,8 @@
       "year": 2005,
       "label": "Island Records",
       "cover": "https://upload.wikimedia.org/wikipedia/en/0/00/Fall_Out_Boy_-_From_Under_the_Cork_Tree_-_CD_album_cover.jpg",
-      "favorite": false,
-      "toListen": false,
+      "favorite": true,
+      "toListen": true,
       "decade": "00s"
     },
     {
@@ -129,7 +117,7 @@
       "label": "Vagrant Records",
       "cover": "https://upload.wikimedia.org/wikipedia/en/2/25/TheGet-UpKidsSomethingtoWriteHomeAbout.jpg",
       "favorite": false,
-      "toListen": false,
+      "toListen": true,
       "decade": "90s"
     },
     {
@@ -141,7 +129,7 @@
       "label": "DGC Records",
       "cover": "https://upload.wikimedia.org/wikipedia/en/c/ca/Pinkerton_cover.jpg",
       "favorite": false,
-      "toListen": false,
+      "toListen": true,
       "decade": "90s"
     },
     {
@@ -201,7 +189,7 @@
       "label": "Equal Vision Records",
       "cover": "https://upload.wikimedia.org/wikipedia/en/thumb/3/30/CoheedAndCambriaSSTB.jpg/220px-CoheedAndCambriaSSTB.jpg",
       "favorite": false,
-      "toListen": false,
+      "toListen": true,
       "decade": "00s"
     },
     {

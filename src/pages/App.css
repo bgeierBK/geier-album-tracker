@@ -5,38 +5,92 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+#homePage{
+  display: grid;
+  grid-template: 
+
+  "header header header"
+  "sidebar sidebar sidebar"
+  "search search search"
+  "main main main"
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#homeNav{
+  grid-area: header
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+#homeSearch{
+  grid-area: search;
+  
 }
 
-.card {
-  padding: 2em;
+#homeContainer{
+  grid-area: main
 }
 
-.read-the-docs {
-  color: #888;
+#homeAdd{
+  grid-area:sidebar
+}
+
+#add-album{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+#records{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#albumCard{
+  width: 400px;
+  height: 400px;
+  display: grid;
+  grid-template: 
+  "info"
+  "buttons"
+}
+
+#record{
+grid-area: info;
+height: 300px
+
+
+}
+
+#buttons{
+  grid-area: buttons;
+}
+#search{
+  margin-bottom: 25px;
+}
+
+.critera{
+  display: flex;
+  flex-direction: column;
+}
+
+.formgroup{
+  display: flex;
+margin: 5px;
+align-items: left;
+
+}
+
+#add{
+  display: flex;
+  justify-content: center;
+}
+
+.subRecords{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+#subRecord{
+  width: 400px;
+  height: 400px
 }

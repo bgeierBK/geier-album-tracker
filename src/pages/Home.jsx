@@ -8,14 +8,26 @@ import './App.css'
 function Home() {
 
   const [records, setRecords] = useState([])
+  
 
+  
   return (
 <>
+<div id="homePage">
+<div id="homeNav">
 <NavBar/>
-    <h2>Nothing feels good</h2>
-    <Search />
-    <AlbumContainer records={records} setRecords={setRecords} />
+<h1>Emo Archive</h1>
+</div>
+    <div id="homeSearch">
+    <Search records={records} setRecords={setRecords} />
+    </div>
+    <div id="homeContainer">
+    <AlbumContainer records={records} setRecords={setRecords}  />
+    </div>
+    <div id="homeAdd">
     <AddAlbum records={records} setRecords={setRecords}/>
+    </div>
+    </div>
     </>
 
   )

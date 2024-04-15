@@ -1,22 +1,21 @@
 import {useState} from 'react'
 
 function Search({records, setRecords}){
-const [decade, setDecade] = useState("")
+const [decade, setDecade] = useState(records)
 
 function handleDecadeChange(event){
     setDecade(event.target.value)
-    console.log(decade)
+    
+}
+function handleSearch(event){
+    event.preventDefault();
+    const filteredRecords = records.filter(record => record.decade === decade)
+    setRecords(filteredRecords)   
 }
 
-    function handleSearch(event){
-    event.preventDefault();
-    console.log(records)
-    const filteredRecords = records.filter(record => record.decade === decade)
-    setRecords(filteredRecords)
-}
 
 return(
-<>
+<div id="search">
 <p>Search by Decade:</p>
 
 <form onSubmit={handleSearch}>
@@ -35,7 +34,7 @@ return(
             />
 
 </form>
-</>
+</div>
 )
 }
 
