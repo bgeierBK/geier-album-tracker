@@ -1,7 +1,7 @@
 import {useState} from 'react'
 import "../pages/App.css"
 
-function AddAlbum({records, setRecords}){
+function AddAlbum({records, setRecords, darkMode}){
     const [formData, setFormData] = useState({
         title: "",
         artist: "",
@@ -49,45 +49,45 @@ function AddAlbum({records, setRecords}){
     }
 
     return(
-    <div id="add">
+    <div id="add" >
         <form id="add-album" onSubmit={handleSubmit}>
             <div id="head">
-            <h2>Don't see your favorite emo record? Add it!</h2>
+            <h2 className={darkMode == true ? "faveHeadDark" : "faveHeadLight"}>Don't see your favorite emo record? Add it!</h2>
             </div>
-            <div className="formgroup">
-            <label className="critera" htmlFor="album_cover">Album Cover:</label>
+            <div className={darkMode == true ? "formDark" :"formLight"}>
+            <label className="label" htmlFor="album_cover">Album Cover:</label>
             <input
             name="cover"
             value={formData.cover}
             onChange={handleChange}
             />
             </div>
-            <div className="formgroup">
-            <label className="critera" htmlFor="album_title">Title:</label>
+            <div className={darkMode == true ? "formDark" :"formLight"}>
+            <label className="label" htmlFor="album_title">Title:</label>
             <input
             name="title"
             value={formData.title}
             onChange={handleChange}
             />
             </div>
-            <div className="formgroup">
-            <label className="critera" htmlFor="album_artist">Artist:</label>
+            <div className={darkMode == true ? "formDark" :"formLight"}>
+            <label className="label" htmlFor="album_artist">Artist:</label>
             <input
             name="artist"
             value={formData.artist}
             onChange={handleChange}
             />
             </div>
-            <div className="formgroup">
-            <label className="critera" htmlFor="album_producer">Producer:</label>
+            <div className={darkMode == true ? "formDark" :"formLight"}>
+            <label className="label"  htmlFor="album_producer">Producer:</label>
             <input
             name="producer"
             value={formData.producer}
             onChange={handleChange}
             />
             </div>
-            <div className="formgroup">
-            <label className="critera" htmlFor="album_year">Year:</label>
+            <div className={darkMode == true ? "formDark" :"formLight"}>
+            <label className="label" htmlFor="album_year">Year:</label>
             <input
             name="year"
             type="number"
@@ -95,8 +95,8 @@ function AddAlbum({records, setRecords}){
             onChange={handleChange}
             />
             </div>
-            <div className="formgroup">
-            <label className="critera" htmlFor="album_decade">Decade:</label>
+            <div className={darkMode == true ? "formDark" :"formLight"}>
+            <label className="label"  htmlFor="album_decade">Decade:</label>
             <select name="decade"
             onChange={handleChange}>
                 <option value="80s">80s</option>
@@ -107,13 +107,12 @@ function AddAlbum({records, setRecords}){
                 
             </select>
             </div>
-            <div className="formgroup">
-            <label htmlFor="album_label">Label:</label>
+            <div className={darkMode == true ? "formDark" :"formLight"}>
+            <label className="label" htmlFor="album_label">Label:</label>
             <input
             name="label"
             value={formData.label}
             onChange={handleChange}
-            className="critera"
             />
             </div>
             <div>

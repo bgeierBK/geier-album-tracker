@@ -4,6 +4,7 @@ import FilteredAlbumCard from '../components/FilteredAlbumCard.jsx'
 import './App.css'
 function MyFaves(){
     const [faveRecords, setFaveRecords] = useState([])
+    const [darkMode, setDarkMode] = useState(false)
 
     useEffect(() =>{
         fetch("http://localhost:3000/records")
@@ -22,13 +23,13 @@ function MyFaves(){
     
     return(
 
-        <>
-<NavBar />
-<h1>My Favorites</h1>
+        <div className={darkMode == true ? "favePageDark" : "favePageLight"} >
+<NavBar darkMode={darkMode} setDarkMode={setDarkMode}/>
+<h1 className={darkMode == true ? "faveHeadDark" : "faveHeadLight"}>My Favorites</h1>
 <div className="subRecords">
 {mappedFaveRecords}
 </div>
-</>
+</div>
     )
 }
 

@@ -177,7 +177,7 @@
       "label": "Vagrant Records",
       "cover": "https://upload.wikimedia.org/wikipedia/en/3/32/Let_it_enfold_you.jpg",
       "favorite": false,
-      "toListen": false,
+      "toListen": true,
       "decade": "00s"
     },
     {
@@ -201,8 +201,20 @@
       "label": "Sub Pop",
       "cover": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Sunny_Day_Real_Estate_-_Diary.jpg/220px-Sunny_Day_Real_Estate_-_Diary.jpg",
       "favorite": true,
-      "toListen": true,
+      "toListen": false,
       "decade": "90s"
+    },
+    {
+      "title": "Crimes",
+      "artist": "The Blood Brothers ",
+      "producer": "John Goodmanson",
+      "year": "2004",
+      "label": "V2",
+      "cover": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e3/Blood_brothers_-_crimes.jpg/220px-Blood_brothers_-_crimes.jpg",
+      "favorite": true,
+      "owned": false,
+      "decade": "00s",
+      "id": "5qbfWWt"
     }
   ]
 }

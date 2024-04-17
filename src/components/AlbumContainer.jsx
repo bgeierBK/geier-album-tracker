@@ -2,7 +2,7 @@ import {useState, useEffect } from 'react'
 import '../pages/App.css'
 import Album from './Album1.jsx'
 
-function AlbumContainer({records, setRecords}){
+function AlbumContainer({records, setRecords, darkMode, setDarkMode}){
     
 
     useEffect(() =>{
@@ -12,7 +12,7 @@ function AlbumContainer({records, setRecords}){
     }, [])
 
     const mappedRecords = records.map(record =>{
-    return <Album key={record.id} record={record} records={records} setRecords={setRecords} />
+    return <Album key={record.id} record={record} records={records} setRecords={setRecords} darkMode={darkMode} setDarkMode={setDarkMode}  />
 })
 
 

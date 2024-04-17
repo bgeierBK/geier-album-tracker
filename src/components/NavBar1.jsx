@@ -1,10 +1,22 @@
+import {useState} from 'react'
 import {NavLink} from "react-router-dom"
+import '../pages/App.css'
 
-function NavBar(){
+function NavBar({darkMode, setDarkMode}){
 
+
+ function handleModeSwitch(event){
+    event.preventDefault()
+    setDarkMode(!darkMode)
+ }
     return(
 
-        <nav>
+      
+        <nav id="navbar">
+        <button id="button" onClick={handleModeSwitch} className={darkMode == true ? "switchDark" : "switchLight"}>
+        {darkMode == true ? "Every is gonna be alright" : "Nothing feels good" }
+        </button>
+            <div id="links">
             <NavLink
             to="/"
             className="navlink"
@@ -23,7 +35,12 @@ function NavBar(){
             >
                 To Listen
             </NavLink>
+            </div>
+           
         </nav>
+      
+       
+       
     )
 }
 

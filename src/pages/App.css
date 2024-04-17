@@ -1,8 +1,8 @@
 #root {
-  max-width: 1280px;
+  
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
+ 
 }
 
 #homePage{
@@ -93,4 +93,126 @@ align-items: left;
 #subRecord{
   width: 400px;
   height: 400px
+}
+
+#navbar{
+ display: flex;
+align-items: center;
+justify-content: right;
+}
+
+#button{
+margin-right: auto;
+}
+
+.navlink{
+  margin: 10px;
+}
+
+.cardDark{
+  background-color: #BEBEBE;
+  height: 280px;
+}
+
+.cardLight{
+  background-color: #ea2ea9;
+  height: 280px;
+}
+
+.homeDark{
+background-color: black;
+}
+
+.homeLight{
+background-color: #96ca81;
+}
+
+.nameDark{
+  color:  #BEBEBE;
+}
+
+.nameLight{
+  color:  #ea2ea9;
+}
+
+.switchDark{
+  background-color: #BEBEBE;
+  margin: 10px;
+}
+
+.switchLight{
+  background-color: #ea2ea9;
+  margin: 10px;
+}
+
+.likeLight{
+  background-color: #ea2ea9 ;
+  margin: 5px;
+}
+
+.likeDark{
+  background-color: #BEBEBE ;
+  margin: 5px;
+}
+
+.formDark{
+  font-size: large;
+  color: #BEBEBE;
+ 
+
+}
+
+.faveHeadDark{
+  color: #BEBEBE;
+}
+
+.label{
+  margin-right: 5px;
+}
+
+.searchHeadDark{
+  color: #BEBEBE
+}
+
+.favePageDark{
+  background-color: black;
+}
+
+.favePageLight{
+  background-color: #96ca81;
+}
+
+.faveHeadDark{
+  color: #BEBEBE
+}
+
+.faveHeadLight{
+  color: #ea2ea9
+}
+
+.subCardDark{
+  background-color: #BEBEBE;
+  height: 280px;
+  
+}
+
+
+.subCardLight{
+  background-color: #ea2ea9;
+  height: 280px;
+}
+
+.error{
+  background-color: #96ca81;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 1000px;
+  width: 10
+
+}
+
+.errorText{
+  color: #ea2ea9
 }
