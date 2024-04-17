@@ -1,7 +1,7 @@
 import {useState} from 'react'
 import '../pages/App.css'
 
-function Album({record, records, setRecords, darkMode, setDarkMode}){
+function Album({record, records, setRecords, darkMode}){
 const [content, setContent] = useState(true)
 
 
